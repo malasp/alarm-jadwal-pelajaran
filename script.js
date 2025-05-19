@@ -1,11 +1,11 @@
 const SPREADSHEET_ID = "1vOZ-fdAOK8hyylppLDHCudiumUiR8hvZ7OL58IrSt34";
-const SHEET_NAME = "JadwalPBM";
+//const SHEET_NAME = "JadwalPBM";
 
 let schedule = [];
 let lastTriggered = null;
 
 async function fetchSchedule() {
-  const url = `https://opensheet.elk.sh/${SPREADSHEET_ID}/${SHEET_NAME}`;
+  const url = `https://opensheet.elk.sh/${SPREADSHEET_ID}/${JadwalPBM}`;
   try {
     const res = await fetch(url);
     schedule = await res.json();
