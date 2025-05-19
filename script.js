@@ -5,7 +5,7 @@ let schedule = [];
 let lastTriggered = null;
 
 async function fetchSchedule() {
-  const url = `https://opensheet.elk.sh/${SPREADSHEET_ID}/${JadwalPBM}`;
+  const url = `https://opensheet.elk.sh/1vOZ-fdAOK8hyylppLDHCudiumUiR8hvZ7OL58IrSt34/JadwalPBM`;
   try {
     const res = await fetch(url);
     schedule = await res.json();
