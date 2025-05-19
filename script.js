@@ -31,7 +31,7 @@ function checkAlarm() {
   const match = schedule.find(row => row["Mulai"] === current);
   if (match) {
     document.getElementById("status").textContent =
-      `🚨 Mulai pelajaran: ${match["Jam Ke-"]}`;
+      `🚨 Mulai pelajaran: ${match["Mata Pelajaran"]}`;
     document.getElementById("alarm").play();
     lastTriggered = current;
   }
