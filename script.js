@@ -1,4 +1,4 @@
-const SPREADSHEET_ID = "MASUKKAN_SPREADSHEET_ID_KAMU_DI_SINI";
+const SPREADSHEET_ID = "1vOZ-fdAOK8hyylppLDHCudiumUiR8hvZ7OL58IrSt34";
 const SHEET_NAME = "JadwalPBM";
 
 let schedule = [];
@@ -31,7 +31,7 @@ function checkAlarm() {
   const match = schedule.find(row => row["Mulai"] === current);
   if (match) {
     document.getElementById("status").textContent =
-      `🚨 Mulai pelajaran: ${match["Mata Pelajaran"]}`;
+      `🚨 Mulai pelajaran: ${match["Jam Ke-"]}`;
     document.getElementById("alarm").play();
     lastTriggered = current;
   }
